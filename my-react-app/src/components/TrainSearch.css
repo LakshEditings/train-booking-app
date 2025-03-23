@@ -1,0 +1,497 @@
+.train-booking-container {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+  }
+  
+  .search-header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 16px;
+  }
+  
+  .search-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .station-input, .date-input, .select-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    color: #666;
+  }
+  
+  .station-name, .date {
+    font-weight: 600;
+    color: black;
+  }
+  
+  .swap-button {
+    margin-left: auto;
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .class-select, .quota-select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+  }
+  
+  .modify-search-btn {
+    background-color: #f97316;
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .filter-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-option input {
+    margin-right: 8px;
+  }
+  
+  .main-content {
+    display: flex;
+    background-color: white;
+  }
+  
+  .sidebar {
+    width: 280px;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    color: black;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-header h3 {
+    margin: 0;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .reset-btn {
+    background: none;
+    border: none;
+    color: #ff5722;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+  }
+  
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .filter-header h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .select-all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #e6f4f9;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .chevron {
+    font-size: 12px;
+  }
+  
+  .filter-options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: black;
+  }
+  
+  .filter-options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .filter-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .filter-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .filter-option label {
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .color-indicator {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .color-indicator.blue {
+    background-color: #1a73e8;
+  }
+  
+  .color-indicator.red {
+    background-color: #d93025;
+  }
+  
+  .time-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .time-block {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .time-block div:last-child {
+    font-size: 14px;
+  }
+  
+  .time-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  
+  .time-slider span {
+    font-size: 12px;
+    color: black;
+  }
+  
+  .slider-track {
+    width: 100%;
+    height: 4px;
+    background-color: #fdba74;
+    margin: 0 8px;
+    position: relative;
+  }
+  
+  .slider-thumb {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #f97316;
+    border-radius: 50%;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 16px;
+    background-color: white;
+    color: black;
+  }
+  
+  .results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .bold {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .nav-buttons {
+    display: flex;
+  }
+  
+  .day-nav {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px 12px;
+    background-color: #f3f4f6;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .prev-day {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .next-day {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 4px;
+  }
+  
+  .sort-options {
+    display: flex;
+    margin-top: 8px;
+  }
+  
+  .sort-button {
+    border: 1px solid #ccc;
+    padding: 4px 12px;
+    background-color: #f3f4f6;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .sort-button:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .sort-button:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 4px;
+  }
+  
+  .ad-banner {
+    width: 100%;
+    height: 48px;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+  }
+  
+  .ad-banner span {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  .train-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: white;
+    color: black;
+  }
+  
+  .train-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .train-name {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .runs-info {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  .schedule-link {
+    color: #213d77;
+    margin-left: 16px;
+  }
+  
+  .journey-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .departure, .arrival {
+    flex: 1;
+    color: black;
+  }
+  
+  .arrival {
+    text-align: right;
+  }
+  
+  .time {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .duration {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .duration-line {
+    border-top: 2px solid #ccc;
+    margin: 0 16px;
+    position: relative;
+  }
+  
+  .duration-text {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 8px;
+    color: black;
+  }
+  
+  .availability {
+    display: flex;
+    margin-top: 16px;
+  }
+  
+  .class-availability {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: white;
+    color: black;
+  }
+  
+  .class-availability:first-child {
+    margin-right: 8px;
+  }
+  
+  .refresh-btn {
+    display: flex;
+    align-items: center;
+    color: #213d77;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .boarding-info {
+    margin-top: 16px;
+    color: black;
+  }
+  
+  .boarding-info a {
+    color: #213d77;
+    text-decoration: none;
+  }
+  
+  .booking-actions {
+    display: flex;
+    margin-top: 16px;
+  }
+  
+  .book-now-btn {
+    background-color: #fdba74;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .other-dates-btn {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+  }
+
+  .advertisement {
+    background-color: #2196f3;
+    color: white;
+    padding: 16px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .ad-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ad-route {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ad-price {
+    font-size: 0.875rem;
+  }

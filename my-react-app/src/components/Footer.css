@@ -1,0 +1,165 @@
+.footer {
+    font-family: Arial, sans-serif;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #3e2865, #93488d);
+}
+
+.social-media p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.social-circle {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-circle:hover {
+    transform: scale(1.1);
+}
+
+.social-img {
+    width: 28px;
+    height: 28px;
+}
+
+.empty-space {
+    height: 4px;
+    background-color: azure;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    background: #2c215d;
+    padding: 30px 40px;
+    color: white;
+}
+
+.footer-column {
+    width: 100%;
+}
+
+.footer-heading {
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-heading:hover {
+    color: orange;
+}
+
+.dropdown-arrow {
+    font-size: 14px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+    transform: rotate(180deg);
+}
+
+.footer-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.footer-list.show {
+    display: block;
+}
+
+.footer-item {
+    padding: 6px 0;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease;
+}
+
+.footer-item:hover {
+    border-bottom: 2px solid orange;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a0f4d;
+    padding: 15px 40px;
+}
+
+.payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.payment-circle {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.payment-circle:hover {
+    transform: scale(1.1);
+}
+
+.payment-circle img {
+    height: 32px;
+    width: 128px;
+    object-fit: contain;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.copyright .cris {
+    color: #66c2ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.copyright .cris:hover {
+    color: #4da6ff;
+}
+
+.browsers {
+    font-size: 14px;
+    color: white;
+}

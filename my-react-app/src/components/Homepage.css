@@ -1,0 +1,319 @@
+.homepage-container {
+  height: 90%;
+  width: 100%;
+  background-image: url("https://mplan.media/wp-content/uploads/2022/08/Indian-Railway-Advertising-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-container {
+  background: rgba(255, 255, 255, 0.85); 
+  padding: 20px;
+  border-radius: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  height: 500px;
+  position: relative;
+  color: #213d77;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1050;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.top-btn {
+  flex: 1;
+  margin: 0 5px;
+  background: #213d77;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+.from-to {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.date-class {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.booking-form > div {
+  width: 48%;
+}
+
+.general-dropdown {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.checkbox-grid label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-grid input {
+  margin-right: 5px;
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.center-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.info-container {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.85); 
+  padding: 15px;
+  border-radius: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 700px;
+  font-size: 14px;
+  color: #213d77;
+}
+
+.info-container a {
+  color: #213d77;
+  font-weight: bold;
+}
+
+.info-container p {
+  margin: 5px 0;
+}
+
+input,
+select,
+button {
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-btn {
+  background: #ff6200;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+  background: #e65500;
+}
+
+.easy-booking-btn {
+  background: #ff6200;
+  color: white;
+}
+
+.easy-booking-btn:hover {
+  background: #e65500;
+}
+
+.search-btn,
+.easy-booking-btn {
+  flex: 1;
+  margin: 15px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .homepage-container {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .booking-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .info-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .booking-form {
+    flex-direction: column;
+  }
+
+  .booking-form > div {
+    width: 100%;
+  }
+}
+
+.service-container {
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background: white; 
+}
+
+.service-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; 
+}
+
+.service-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 100px; 
+  height: 100px; 
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.service-item p {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.holiday-container {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  font-family: Arial, sans-serif;
+}
+
+.holiday-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.holiday-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.holiday-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.holiday-card:hover {
+  transform: translateY(-5px);
+}
+
+.holiday-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.holiday-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.holiday-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #05080a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
