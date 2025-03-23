@@ -1,6 +1,4 @@
-/* Track.css */
 
-/* Main layout styles */
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +10,6 @@ body {
     height: 100vh;
   }
   
-  /* Sidebar styles */
   .sidebar {
     width: 240px;
     background-color: #5c6bc0;
@@ -117,7 +114,6 @@ body {
     cursor: pointer;
   }
   
-  /* Content area styles */
   .content-area {
     flex: 1;
     display: flex;
@@ -224,7 +220,6 @@ body {
     cursor: pointer;
   }
   
-  /* Train details styles */
   .train-header {
     background-color: #2196f3;
     color: white;
@@ -623,12 +618,10 @@ body {
     gap: 8px;
   }
   
-  /* Helper class for when marker is positioned at 72% */
   .marker-72-percent {
     right: 28%;
   }
   
-  /* New tab badge */
   .new-badge {
     background-color: #f44336;
     color: white;
